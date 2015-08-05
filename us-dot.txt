@@ -1,0 +1,91 @@
+Computing a BAC Estimate
+
+
+Office of Program Development and Evaluation
+National Highway Traffic Safety Administration
+400 Seventh Street, S.W.
+Washington, D.C. 20590
+
+October, 1994
+
+Computing a BAC Estimate
+
+According to a recent survey, most Americans think that drivers should not drink alcohol and then drive.(1) Nonetheless, our legal system generally relates certain offenses to the amount of alcohol detected in a driver's body. The amount of alcohol is usually referred to as BAC -- blood alcohol concentration -- although it is often measured in the breath where the alcohol level in the water vapor of the breath follows the alcohol level in the blood.(2)
+
+BAC is highly related to the amount of alcohol consumed over time. However, BAC is also influenced by other factors and the complex relationship makes it difficult for people to easily estimate BACs. For example, what is the BAC of a 125 pound woman, who is not an experienced drinker, who has four beers over two hours?
+
+When legislators debate bills that reference particular BACs, statements are often made regarding how much drinking would be, and would not be, permitted prior to driving. Until now, expert testimony would be required to confirm or deny such statements.
+
+Recent work, conducted as a part of a report to Congress on alcohol limits for drivers(3), provided the basis for a useful tool that enables anyone with access to a personal computer to look up an estimate of BAC based on a person's weight, gender, number of drinks consumed, and time for which one is asking that the estimate be made. It should be understood that what results is an estimate because we calculate the BAC based on average values, for example, the amount of water in the body and in the blood, the average metabolism rate for a population, etc. The value estimated will certainly be correct for most individuals sharing characteristics placed into the computation, but may be greater or lesser depending on individual factors of which we do not have knowledge.
+
+The estimate of BAC should not be used by individuals to decide whether or not to drive after drinking -- impairment can result from any amount of alcohol. However, it does provide the best available approximation of the number of drinks it takes for individuals to reach specific BACs.
+
+Basis for Calculating the BAC Estimate(4)
+
+The basic formula for estimating a person's blood alcohol concentration derives from the work done by Widmark in the early 1930s(5). Advancements in this technical area have lead to refinements in Widmark's basic calculation formula. The particular formula used here incorporates a BAC calculation procedure provided to the National Highway Traffic Safety Administration courtesy of Herbert Moskowitz, Ph.D., a noted alcohol researcher.
+
+The basis for the calculations are the established physiological facts that alcohol distributes itself in the total water of the body, and that it is disposed of primarily by metabolism in the liver. The procedure takes into account the amount of body water in males and females, and the range of metabolic rates to be found in the population. The procedure, along with a work example, is presented below.
+
+Alcohol concentration is defined in terms of the weight of ethanol (Ethyl alcohol) in a volume of blood or breath. In the United States the typical measure is grams of ethanol in 100 milliliters of blood or in 210 liters of breath and is reported as, for example, .10 percent or .10.(6)
+
+The procedure by which one calculates how to convert a dose of alcohol into a probable blood alcohol concentration proceeds in several steps:
+
+1) After absorption, alcohol is eventually distributed in the total water in the body. Begin by calculating the amount of water in the subject. On average, males have 58 percent of their body weight as water and females have 49 percent of their weight as water. To find the amount of water in an individual of given weight, one multiplies the body weight in kilograms by the gender percentage and obtains the amount of weight of the water in kilograms (one kilogram equals 2.2046 pounds). A kilogram of water occupies one liter, one can easily convert from weight to volume of water. For example, consider a 128-pound male of age 25. One hundred and twenty eight pounds divided by 2.2046 converts pounds into 58.06 kilograms, which is his kilogram weight. (The BAC Estimator program makes the conversion automatically.)
+
+2) To find the total body water, multiply the 58.06 kilograms times .58 (58% of body weight). This equals 33.675 kilograms of water, which occupies a volume of 33.675 liters or 33,675 milliliters.
+
+3) The next step is to inquire what concentration in water will occur when a given dose of alcohol is administered. Assume that the dose is one ounce of pure alcohol (i.e., 200 proof). One ounce of alcohol equals 29.57 milliliters. Since alcohol has a specific gravity of .79, the 29.57 milliliters will weigh 23.36 grams.
+
+One ounce of alcohol (i.e., 23.36 grams), absorbed into a 128-pound male's total body water, produces an alcohol concentration in water of 23.36 grams divided by 33,675 milliliters, i.e., .0006937 grams alcohol per milliliter of body water.
+
+4) We now find the alcohol concentration in the blood. On average, blood is composed of 80.6 percent water. Therefore, the .0006937 grams alcohol per milliliter of water is multiplied by .806. This results in .000559 grams alcohol per milliliter of blood (this is because each milliliter of blood only has .806 milliliters of water).
+
+5) The result, 0.000559 grams alcohol per milliliter blood, equals 0.0559 grams alcohol per 100 milliliters blood. This is also described as grams per deciliter (i.e., per 1/10 liter of blood), or also as .0559. It should be noted that our calculations are based on average characteristics for individuals. While .58 is the mean water body weight percentage of males and .49 is the mean water weight percentage of females, individuals vary with respect to this figure. Younger people have a higher proportion of body water as a fraction of their total weight, and older people have less. Overweight individuals have a smaller proportion of their body weight as water, and lean people have a larger fraction of their body weight as water. In most cases, this variability will produce a small fraction as error in calculating BAC. Another source of variation is the amount of water in the blood which we have estimated as averaging 80.6%, but it varies as a function of several factors including the red blood cell concentration measured by the hemocrit. But again, .806 is the average value, and deviations typically are small.
+
+Water body weight percentage is the percentage of total body weight composed of water. This is not the same as Widmark's "R" factor. The "R" factor is a complex empirical measure that takes into account both body water percentage and water concentration in blood.
+
+6) We have calculated the theoretical instantaneous BAC for one ounce of alcohol. To adjust this calculation for the actual content of alcohol in a drink, one multiplies the number of ounces of alcohol in the drink by the figure for BAC per one ounce alcohol. An example might be a 12-ounce can of beer drunk by the 128-pound male. Assuming that the concentration of alcohol in the beverage is 4.5 percent by volume, one multiplies the 12 ounces in the beer can times .045 and determines that the can contains .54 ounces of alcohol. Therefore, the theoretically peak instantaneous BAC produced by a single can of beer in our 128-pound male would be .54 times .0559 (the BAC produced by one ounce of alcohol) equalling .0302.
+
+7) The final factor to take into account is the metabolism or burnoff. Alcohol is metabolized from the time that ingestion begins. It takes but a few seconds for alcohol to reach the liver and for metabolism to commence after drinking. Thus, metabolism is occurring during the period that alcohol is being absorbed and distributed throughout the body. To determine the actual blood alcohol level at any given time, we must decrease the theoretical instantaneous peak BAC by the amount of alcohol metabolized from the beginning of drinking. As an example, let us take the 128-pound male who has consumed one can of beer and determine what his likely BAC level would be at the end of one hour. We have already determined that if all the alcohol that he consumed were instantaneously distributed throughout the body, he would have a blood alcohol level of .0302. Now, however, one hour has passed, during which metabolism has occurred. There is considerable variation in metabolism rate. While there are several factors that determine metabolism rate, the prime factor is the recent drinking history since the metabolism rate is determined by the production of an enzyme in the liver which generates more enzymes if over a period of time (usually several months) it is called upon to process frequent/large quantities of alcohol.
+
+Although the average metabolism rate for moderate drinkers produces a .017 per hour decline in BAC level (here termed "Average"), and the average metabolism rate for heavy drinkers (who consume 60 drinks or more in one month) produces a .02 per hour decline (here termed "Above Average"), the range of metabolism rate in the population can go above .040 and below .010. One can either utilize in the calculation the average (.017 per hour decline) metabolism rate, or if one wished to use a very conservative figure, (which less than 20 percent of the population would exhibit), one could use .012 per hour decline (here termed "Below Average") [Note: the BAC Estimator program provides BAC estimates for above average, average, and below average metabolism rates automatically. These three categories of metabolism rate closely approximate a drinker's recent drinking pattern, i.e., frequency and quantity of consumption.]
+
+If we wish to be sure that we can determine when our blood alcohol concentration level has returned to zero, it might be well to use this very conservative (below average) figure. Thus we take the .0302 BAC and subtract .012 for one hour of metabolism and calculate that the estimated BAC at the end of one hour is .0182 for a 128 pound male who has drunk a 12 ounce can of beer containing 4.5 percent alcohol by volume, assuming a conservative metabolic rate of .012 per hour. (The BAC Estimator program rounds-off BAC estimates to two decimal places, thus it would report a calculated BAC of .0182 as .02.)
+
+Example:
+
+Find the BAC for 128 lb. male drinking 12 oz. beer (4.5 percent alcohol by volume) in one hour's time.
+
+A. Convert pounds to kilograms: 128lbs ÷ 2.2046 = 58.06 kg.
+
+B. Find total body water: 58.06 kg. X .58 = 33.675 liters or 33,675 milliliters water
+
+C. Determine the weight in grams of 1 oz. alcohol:
+
+29.57 ml/oz X .79 g/ml = 23.36 grams/oz
+
+D. If we put 1 oz. of alcohol into the subject's total body water, we would have grams of alcohol/ml. of water, e.g.,
+
+23.36 grams ÷ 33,675 milliliter = .0006937 grams alcohol/ml of water
+
+E. We now want to find the alcohol concentration in the blood. Blood is composed of 80.6 percent water; therefore, .0006937 X .806 = .000559 grams alcohol/milliliter blood.
+
+F. Instead of grams alcohol per milliliter blood, we need the figure in terms of grams per 100 milliliter, also known as grams percent. Multiply the .000559 grams alcohol/ milliliter blood by 100, i.e., .000559 grams per milliliter X 100 = .0559 grams alcohol per 100 milliliters, or .0559.
+
+(This is the BAC which 1 oz. of alcohol would produce in a 128 lb male if there were instantaneous consumption, absorption, and distribution of the alcohol throughout the body.)
+
+G. To adjust for the actual amount consumed, one multiplies the above figure by the amount of alcohol in the beverage consumed. Thus, if the 128 lb. male described above consumed a single 12 oz. can of beer containing 4.5 percent alcohol by volume, he would have consumed 12 oz. X .045 = .54 oz. of alcohol. Since 1 oz. of alcohol would produce a BAC of .0559 and .54 oz. of alcohol has been consumed, the actual alcohol level would be .0559 x .54 = .030 BAC for one can of beer.
+
+H. In real life, time must pass for the consumption, absorption, and distribution of alcohol throughout the body. Therefore, we calculate what the actual BAC level would be at the end of one hour after consuming the single can of beer. During this period, the body would have disposed of alcohol through metabolism at a rate characteristic of that individual, primarily his recent frequency and quantity of drinking. Utilizing a conservative (below average) metabolism rate of .012 per hour, we can calculate the BAC level as .0302 - .012 per hour X 1 hour = .0182 BAC at the end of one hour for our 128 lb. male who drank 1 can of beer. (As noted above, the BAC Estimator program rounds-off BAC estimates to two decimal places, thus it would report a calculated BAC of .0182 as .02.) Note that the time of metabolism is calculated from the beginning of drinking, not when the consumption is completed.
+
+1. National Survey of Drinking and Driving Attitudes and Behavior, draft report, Department of Transportation, 1993.
+
+2. "BAC" refers to either blood alcohol concentration, stated as grams per 100 milliliters of blood, or breath alcohol concentration, stated as grams per 210 liters of breath.
+
+3. Driving under the Influence: A Report to Congress on Alcohol Limits. October, 1992. U.S. Department of Transportation.
+
+4. This procedure was published in Appendix I of Driving under the Influence: A Report to Congress on alcohol limits. October, 1992. U.S. Department of Transportation.
+
+5. Widmark, E. Die theoretischen grundiagen und die praktische verwendbarkeit der geriehtlich-medizinishen alkoholbestimmung. 1932. Berlin: Urgan and Schwarzenberg.
+
+6. "Percent" in U.S. toxicological circles means grams per 100 milliliter; this is a weight per volume measure and does not carry the usual meaning of percentage. In this report, BAC is defined as either blood alcohol concentration, stated as grams per 100 milliliters of blood or as breath alcohol concentration, stated as grams per 210 liters of breath, and is reported without a "%" sign. 
